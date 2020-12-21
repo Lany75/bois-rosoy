@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+}
+
+@media screen and (min-width: 1025px) {
+  #logo {
+    margin: 50px;
+  }
+
+  #text-accueil {
+    margin-bottom: 20px;
+  }
+
+  #inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+
+  #message {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #logo {
+    margin-bottom: 20px;
+  }
+
+  #text-accueil {
+    margin-bottom: 20px;
+  }
+
+  #inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .input {
+    margin: 5px;
+  }
+  
+  #message {
+    margin-bottom: 50px;
+  }
+}
