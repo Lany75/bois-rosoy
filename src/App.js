@@ -9,20 +9,21 @@ const App = () => {
   let tailleOK = true;
 
   const verifTailleNbr = (nombre) => {
-    //console.log('taille : ', tailleOK);
+
     if (nombre.length !== 2) {
-      //console.log('taille (dans if) avant: ', tailleOK);
       tailleOK = false;
-      //console.log('taille (dans if) apres: ', tailleOK);
-      const divMessage = document.getElementById("message");
-      divMessage.textContent = "vous devez entrer des nombres à 2 chiffres";
+      afficheMessage("vous devez entrer des nombres à 2 chiffres")
 
     } else {
       tailleOK = true;
-      const divMessage = document.getElementById("message");
-      divMessage.textContent = "";
+      afficheMessage("");
     }
 
+  }
+
+  const afficheMessage = (message) => {
+    const divMessage = document.getElementById("message");
+    divMessage.textContent = message;
   }
 
   const verifChiffres = () => {
@@ -42,27 +43,21 @@ const App = () => {
 
     if (tailleOK === true) {
       if (chiffre1.toString() !== "06") {
-        const divMessage = document.getElementById("message");
-        divMessage.textContent = "Votre 1er chiffre n'est pas correct";
+        afficheMessage("Votre 1er nombre n'est pas correct");
       } else {
         if (chiffre2.toString() !== "10") {
-          const divMessage = document.getElementById("message");
-          divMessage.textContent = "Votre 2ème chiffre n'est pas correct";
+          afficheMessage("Votre 2ème nombre n'est pas correct");
         } else {
           if (chiffre3.toString() !== "97") {
-            const divMessage = document.getElementById("message");
-            divMessage.textContent = "Votre 3ème chiffre n'est pas correct";
+            afficheMessage("Votre 3ème nombre n'est pas correct");
           } else {
             if (chiffre4.toString() !== "66") {
-              const divMessage = document.getElementById("message");
-              divMessage.textContent = "Votre 4ème chiffre n'est pas correct";
+              afficheMessage("Votre 4ème nombre n'est pas correct");
             } else {
               if (chiffre5.toString() !== "14") {
-                const divMessage = document.getElementById("message");
-                divMessage.textContent = "Votre 5ème chiffre n'est pas correct";
+                afficheMessage("Votre 5ème nombre n'est pas correct");
               } else {
-                const divMessage = document.getElementById("message");
-                divMessage.textContent = "Bravo !! Vous avez trouvez tous les chiffres, vous pouvez appeler ce numéro";
+                afficheMessage("Bravo !! Vous avez trouvez tous les nombre, vous pouvez appeler ce numéro");
               }
             }
           }
