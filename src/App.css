@@ -5,10 +5,34 @@
 @media screen and (min-width: 1025px) {
   #logo {
     margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #logo-bois-rosoy {
+    width: 200px;
+    height: 200px;
+  }
+
+  #logo-escape-forest {
+    width: 200px;
+    height: 200px;
+  }
+
+  h1 {
+    margin-bottom: 80px;
+  }
+
+  #numeros-trouves {
+    margin: 0px 20px 0px 20px;
+    border: 2px solid black;
+    padding: 50px;
   }
 
   #text-accueil {
-    margin-bottom: 20px;
+    font-size: 22px;
+    margin-bottom: 40px;
   }
 
   #inputs {
@@ -18,14 +42,50 @@
     margin-bottom: 50px;
   }
 
+  .input-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .input {
+    width: 60px;
+    margin: 5px;
+  }
+
   #message {
-    margin-bottom: 50px;
+    margin: 50px;
+    font-size: 22px;
   }
 }
 
 @media screen and (max-width: 1024px) {
   #logo {
-    margin-bottom: 20px;
+    margin: 30px 0px 30px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #logo-bois-rosoy {
+    width: 100px;
+    height: 100px;
+  }
+
+  #logo-escape-forest {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+
+  #numeros-trouves {
+    margin: 0px 10px 0px 10px;
+    border: 2px solid black;
+    padding: 30px;
   }
 
   #text-accueil {
@@ -35,14 +95,22 @@
   #inputs {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom: 50px;
   }
 
+  .input-group {
+    display: flex;
+    flex-direction: row;
+  }
+
   .input {
+    width: 60px;
     margin: 5px;
   }
   
   #message {
-    margin-bottom: 50px;
+    margin: 20px;
+    font-size: 16px;
   }
 }
