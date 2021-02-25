@@ -4,12 +4,6 @@ import Button from '@material-ui/core/Button';
 
 import './App.css';
 
-import imgBoisRosoy from './images/logo-bois-de-rosoy.png';
-import escapeForest from './images/Logo-ESCAPE-FOREST-noir-150x150.png';
-
-
-
-
 const App = () => {
   const numeros = ["0", "6", "1", "0", "9", "7", "6", "6", "1", "4"];
 
@@ -43,7 +37,7 @@ const App = () => {
         }
       }
 
-      if (goodNumber) afficheMessage("Félicitations ! C'est le bon numéro. Contactez vite Axelle")
+      if (goodNumber) afficheMessage("Félicitations ! C'est le bon numéro. Contactez vite Axelle !")
       else afficheMessage("Oups ! Le numéro n'est pas correct. Besoin d'aide ? Contactez findthetreasure@gmail.com")
 
     }
@@ -52,12 +46,7 @@ const App = () => {
   return (
     <div className="App">
 
-      <div id="logo">
-        <img id="logo-bois-rosoy" src={imgBoisRosoy} alt="Le bois de Rosoy" />
-        <img id="logo-escape-forest" src={escapeForest} alt="Escape Forest" />
-      </div>
-
-      <h1>Allez vous trouver le trésor ?</h1>
+      <h1>Allez-vous trouver le trésor ?</h1>
 
       <div id="numeros-trouves">
 
